@@ -29,6 +29,7 @@ print(decoded)
 
 # Version 2 - Goes through a list
 
+"""
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
 decoded = ''
@@ -43,3 +44,18 @@ for letter in cipher:
     else:
         decoded += letter
 print (decoded)
+"""
+
+# Version 3 - Use of make trans found on https://stackoverflow.com/questions/36367883/shift-n-letters-in-python
+
+import string
+
+def shift_n_letters(text, n):
+    intab = string.ascii_lowercase # "abcdefghijklmnopqrstuvwxyz"
+    outtab = intab[n % 26:] + intab[:n % 26] # alphabet shifted by n
+    trantab = str.maketrans(intab, outtab) # translation made b/w patterns
+
+    return text.translate(trantab) # text is shifted to right
+
+cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
+print(shift_n_letters(cipher,13))
