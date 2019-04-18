@@ -24,11 +24,16 @@ word = input('Enter a word: ')
 previous_letter = ''
 new_word = ''
 
+# goes through each letter in the word
 for letter in word:
+    # checks if the current letter is duplicated
     if previous_letter == letter:
+        #if it is we will multiply it 4 times because it is added once previously
         new_word += letter * 4
     else:
+        #if the letter wasnt duplicate, add it anyway
         new_word += letter
+    # before we go to the next letter, we change the previous letter to the current one 
     previous_letter = letter
 
 print(new_word)
