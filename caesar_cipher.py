@@ -30,6 +30,7 @@ print(decoded)
 # Version 2 - Goes through a list
 
 """
+
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
 decoded = ''
@@ -44,6 +45,7 @@ for letter in cipher:
     else:
         decoded += letter
 print (decoded)
+
 """
 
 # Version 3 - Use of make trans found on https://stackoverflow.com/questions/36367883/shift-n-letters-in-python
