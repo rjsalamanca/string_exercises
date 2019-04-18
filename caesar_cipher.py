@@ -1,7 +1,8 @@
-# Version 1
+# Version 1 - Goes through ascii
 
 """
->cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'.lower()
+
+cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'.lower()
 decoded = ''
 
 for letter in cipher:
@@ -23,9 +24,10 @@ for letter in cipher:
         decoded += letter
 
 print(decoded)
+
 """
 
-# Version 2
+# Version 2 - Goes through a list
 
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
