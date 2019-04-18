@@ -2,10 +2,15 @@
 
 ## Uppercase a String
 Given a string, print the string uppercased. #string #easy
+**Solution can be found in the file: upper_cap_reverse.py**
+
 ## Capitalize a String
 Given a string, print the string capitalized. #string #easy
+**Solution can be found in the file: upper_cap_reverse.py**
+
 ## Reverse a String
 Given a string, print the string reversed.
+**Solution can be found in the file: upper_cap_reverse.py**
 
 ## Leetspeak
  
@@ -24,7 +29,10 @@ replacements (treat all input characters as uppercase):
 
 Example: Leet => l337
 
+**Solution can be found in the file: leet_speak.py**
+
 ## Long-long Vowels
+
 Given a word as a string, print the result of extending any long vowels to the length of 5. Examples:
 
     Good => Goooood
@@ -32,6 +40,12 @@ Given a word as a string, print the result of extending any long vowels to the l
     Man => Man
     Spoon => Spooooon
 
+**Solution can be found in the file: long_long_vowels.py**
 
 ## Caesar Cipher
-Given a string, print the Caesar Cipher (or ROT13) of that string. What is Caesar Cipher? http://practicalcryptography.com/ciphers/caesar-cipher/ Use your solution to decipher the following text: "lbh zhfg hayrnea jung lbh unir yrnearq"
+Given a string, print the Caesar Cipher (or ROT13) of that string. What is Caesar Cipher? http://practicalcryptography.com/ciphers/caesar-cipher/ 
+
+Use your solution to decipher the following text: 
+"lbh zhfg hayrnea jung lbh unir yrnearq"
+
+**Solution can be found in the file: caesar_cipher.py**
