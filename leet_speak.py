@@ -1,3 +1,6 @@
+# Version 1
+
+'''
 leet_this = (input('Type in anything: ')).upper()
 leet_result = ''
 
@@ -21,3 +24,15 @@ for letter in leet_this:
         leet_result += letter
 
 print(leet_result)
+'''
+
+# Version 2 - Use of replace
+
+leet_this = (input('Type in anything: ')).upper()
+alpha_to_leet =   ['A','E','G','I','O','S','T']
+leet_characters = ['4','3','6','1','0','5','7']
+
+for i in range(len(alpha_to_leet)):
+    leet_this = leet_this.replace(alpha_to_leet[i],leet_characters[i])
+
+print(leet_this)
