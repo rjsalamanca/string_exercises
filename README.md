@@ -2,14 +2,17 @@
 
 ## Uppercase a String
 Given a string, print the string uppercased. #string #easy
+
 **Solution can be found in the file: upper_cap_reverse.py**
 
 ## Capitalize a String
 Given a string, print the string capitalized. #string #easy
+
 **Solution can be found in the file: upper_cap_reverse.py**
 
 ## Reverse a String
 Given a string, print the string reversed.
+
 **Solution can be found in the file: upper_cap_reverse.py**
 
 ## Leetspeak
