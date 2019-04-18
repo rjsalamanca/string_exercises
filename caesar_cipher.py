@@ -1,4 +1,7 @@
-cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'.lower()
+# Version 1
+
+"""
+>cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'.lower()
 decoded = ''
 
 for letter in cipher:
@@ -20,3 +23,21 @@ for letter in cipher:
         decoded += letter
 
 print(decoded)
+"""
+
+# Version 2
+
+alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
+decoded = ''
+
+for letter in cipher:
+    if letter.isalpha():
+        get_index_of_letter = alphabet.index(letter)
+        if get_index_of_letter < 12:
+            decoded += alphabet[get_index_of_letter+13]
+        else:
+            decoded += alphabet[get_index_of_letter+13-26]
+    else:
+        decoded += letter
+print (decoded)
