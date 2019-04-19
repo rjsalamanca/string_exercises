@@ -50,6 +50,8 @@ print (decoded)
 
 # Version 3 - Use of make trans found on https://stackoverflow.com/questions/36367883/shift-n-letters-in-python
 
+"""
+
 import string
 
 def shift_n_letters(text, n):
@@ -61,3 +63,23 @@ def shift_n_letters(text, n):
 
 cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
 print(shift_n_letters(cipher,13))
+
+"""
+
+# Version 4 - use of a string instead of a list
+
+cipher = 'lbh zhfg hayrnea jung lbh unir yrnearq'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+decoded = ''
+
+for letter in cipher:
+    if letter.isalpha():
+        get_index_of_letter = alphabet.index(letter)
+        if get_index_of_letter < 12:
+            decoded += alphabet[get_index_of_letter+13]
+        else:
+            decoded += alphabet[get_index_of_letter+13-26]
+    else:
+        decoded += letter
+print (decoded)
